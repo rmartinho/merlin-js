@@ -1,0 +1,48 @@
+{
+  "name": "merlin-js",
+  "version": "0.1.0",
+  "description": "An implementation of Merlin transcripts",
+  "type": "module",
+  "main": "dist/merlin.js",
+  "types": "dist/merlin.d.ts",
+  "files": [
+    "/dist"
+  ],
+  "scripts": {
+    "build": "npm run build:clean; tsc",
+    "build:clean": "rm dist/* 2> /dev/null",
+    "lint": "prettier --check 'src/**/*.{js,ts}' 'test/**/*.{js,ts}'",
+    "format": "prettier --write 'src/**/*.{js,ts}' 'test/**/*.{js,ts}'",
+    "test": "vitest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rmartinho/merlin-js.git"
+  },
+  "keywords": [
+    "cryptography",
+    "security",
+    "strobe",
+    "merlin",
+    "keccak",
+    "zkp",
+    "fiat-shamir"
+  ],
+  "author": "rmf",
+  "license": "CC0-1.0",
+  "bugs": {
+    "url": "https://github.com/rmartinho/merlin-js/issues"
+  },
+  "homepage": "https://github.com/rmartinho/merlin-js#readme",
+  "devDependencies": {
+    "@types/jest": "^29.5.11",
+    "@types/node": "^20.11.0",
+    "randchacha": "^1.0.2",
+    "ts-jest": "^29.1.1",
+    "typescript": "^5.3.3",
+    "vitest": "^1.2.0"
+  },
+  "dependencies": {
+    "@rmf/strobe": "file:../strobe"
+  }
+}
