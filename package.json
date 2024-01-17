@@ -1,6 +1,6 @@
 {
-  "name": "merlin-js",
-  "version": "0.1.0",
+  "name": "@rmf1723/merlin-js",
+  "version": "0.1.2",
   "description": "An implementation of Merlin transcripts",
   "type": "module",
   "main": "dist/merlin.js",
@@ -43,6 +43,6 @@
     "vitest": "^1.2.0"
   },
   "dependencies": {
-    "@rmf/strobe": "file:../strobe"
+    "@rmf1723/strobe-js": "^0.1.1"
   }
 }

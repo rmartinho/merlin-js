@@ -1,6 +1,5 @@
-import { Strobe } from '@rmf/strobe'
-import { utf8 } from '@rmf/strobe/dist/utils'
-import { u32le, webcryptoRng, bufferOf } from './utils'
+import { Strobe } from '@rmf1723/strobe-js'
+import { u32le, utf8, webcryptoRng, bufferOf } from './utils.js'
 
 const MERLIN_PROTOCOL_LABEL = 'Merlin v1.0'
 

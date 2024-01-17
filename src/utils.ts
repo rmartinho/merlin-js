@@ -5,6 +5,11 @@ export function u32le(n: number): Uint8Array {
   new DataView(buffer).setUint32(0, n, true)
   return new Uint8Array(buffer)
 }
+
+export function utf8(s: string): Uint8Array {
+  return new TextEncoder().encode(s)
+}
+
 declare const globalThis: {
   crypto: {
     getRandomValues(buffer: Uint8Array): void
@@ -15,6 +20,7 @@ export const webcryptoRng: Rng = {
     globalThis.crypto.getRandomValues(bufferOf(buffer))
   },
 }
+
 export function bufferOf(lengthOrBuffer: number | ArrayBufferView): Uint8Array {
   return typeof lengthOrBuffer == 'number'
     ? new Uint8Array(lengthOrBuffer)

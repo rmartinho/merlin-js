@@ -4,7 +4,7 @@ import { test, expect } from 'vitest'
 import { ChaChaRng } from 'randchacha'
 
 import { Transcript } from '../src/merlin'
-import { utf8 } from '@rmf/strobe/dist/utils'
+import { utf8 } from '../src/utils'
 
 test('simple protocol', () => {
   const transcript = new Transcript('test-simple')
