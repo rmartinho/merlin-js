@@ -1,6 +1,6 @@
 {
   "name": "@rmf1723/merlin",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "description": "An implementation of Merlin transcripts",
   "type": "module",
   "main": "dist/merlin.js",
